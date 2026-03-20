@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int come(int tempo, vector<int>& v, int c, int velo){
+    int comida=1, cont=0;
+    long long max=(long long)tempo*velo;
+    for(int p:v){
+        if(p>max)return 0;
+        if(cont+p<=max) cont+=p;
+        else{
+            comida++;
+            cont=p;
+        }
+    }
+    if(comida<=c) return 1;
+    else return 0;
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); 
+    int n,c,t,menor=0;
+    cin>>n>>c>>t;
+    vector<int> v(n);
+    for(int i=0; i<n;i++){
+        cin>>v[i];
+    }
+    long long maior=1000000000,meio,resp;
+    while(menor<=maior){
+            meio=(menor+maior)/2;
+            if(come(meio,v,c,t)){
+                resp=meio;
+                maior=meio-1;
+            }
+            else menor=meio+1;
+    }
+    cout<<resp<<"\n";
+}
