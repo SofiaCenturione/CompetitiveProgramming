@@ -33,8 +33,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/SAMSUNG/OneDrive/Área de Trabalho",
-      "program": "c:/Users/SAMSUNG/OneDrive/Área de Trabalho/build/Debug/outDebug",
+      "cwd": "c:/Users/SAMSUNG/OneDrive/Documentos/GitHub/ProgramacaoCompetitiva",
+      "program": "c:/Users/SAMSUNG/OneDrive/Documentos/GitHub/ProgramacaoCompetitiva/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
