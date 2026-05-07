@@ -29,7 +29,6 @@ int main(){
             }
         }
     }
-
     //busca em largura monstro
     while(!q.empty()){
         auto [x, y] = q.front(); q.pop();
@@ -41,7 +40,6 @@ int main(){
             }
         }
     }
-
     //busca em largura jogador
     q.push(comeco);
     dist_a[comeco.first][comeco.second]=0;
