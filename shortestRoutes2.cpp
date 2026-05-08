@@ -14,7 +14,7 @@ int main(){
     ll c;
     cin>>n>>m>>q;
     vector<vector<ll>> dist(n+1, vector<ll>(n+1, inf));
-    for(int i=1;i<=m;i++)
+    for(int i=1;i<=n;i++)
         dist[i][i] = 0;
     for(int i=0;i<m;i++){
         cin>>a>>b>>c;            
